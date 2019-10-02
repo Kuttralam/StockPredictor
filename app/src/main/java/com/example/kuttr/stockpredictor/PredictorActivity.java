@@ -21,7 +21,7 @@ public class PredictorActivity extends AppCompatActivity implements View.OnClick
     final static String fileName = "fav.txt";
     final static String path = "MLMarksman" ;
     String data="";
-    ImageView imageView,imageView1;
+    ImageView imageView,imageView1,fav;
     Button addtofav,remfromfav;
     double prevValue=0;
     private Spinner spinner;
@@ -44,6 +44,7 @@ public class PredictorActivity extends AppCompatActivity implements View.OnClick
         CompanyTView.setText(cp);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        fav=findViewById(R.id.fav);
         addtofav=findViewById(R.id.addtofav);
         remfromfav=findViewById(R.id.remfromfav);
         addtofav.setOnClickListener(this);
