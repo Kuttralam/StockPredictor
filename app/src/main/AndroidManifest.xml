@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kuttr.stockpredictor">
 
+    <uses-permission android:name="android.permission.SEND_SMS" />
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -32,6 +33,10 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="Stock Predictor - Login"
             android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".signup"
+            android:label="Sign Up"
+            android:parentActivityName=".MainActivity"></activity>
 
         <meta-data
             android:name="io.fabric.ApiKey"
@@ -81,14 +86,23 @@
             android:name=".PredictorActivity"
             android:label="Predictor"
             android:parentActivityName=".predictor" />
-        <activity android:name=".calculator"
+        <activity
+            android:name=".calculator"
             android:label="Stock Profit Calculator"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity android:name=".calculator2"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".calculator2"
             android:label="Stock Profit Calculator"
-            android:parentActivityName=".Main2Activity">
-        </activity>
+            android:parentActivityName=".Main2Activity" />
+        <activity
+            android:name=".Message"
+            android:label="Message"
+            android:parentActivityName=".settings" />
+        <activity
+            android:name=".Message2"
+            android:label="Message"
+            android:parentActivityName=".settings2" />
+
     </application>
 
 </manifest>

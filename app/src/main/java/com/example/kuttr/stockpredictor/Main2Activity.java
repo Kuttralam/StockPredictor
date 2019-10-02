@@ -88,7 +88,6 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
-
     @Override
     public void onBackPressed() {
         if (mDrawerlayout.isDrawerOpen(GravityCompat.START)) {

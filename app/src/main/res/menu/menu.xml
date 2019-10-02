@@ -27,7 +27,7 @@
     <item android:title="Communicate"
         android:id="@+id/nav_communicate"
         android:visible="true"
-        >
+        >zz
         <menu>
             <item
                 android:id="@+id/nav_share"

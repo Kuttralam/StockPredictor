@@ -44,18 +44,7 @@
             android:layout_marginLeft="100dp"/>
 
     </LinearLayout>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ADD TO FAVOURITES"
-        android:id="@+id/addtofav"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Remove From Favourites"
-        android:id="@+id/remfromfav"
-        />
+    
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp"
