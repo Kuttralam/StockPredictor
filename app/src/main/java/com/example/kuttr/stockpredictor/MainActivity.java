@@ -106,11 +106,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(i);
 
         }
-        else if (id == R.id.nav_favourite) {
-            Intent i = new Intent(MainActivity.this, favourites.class);
-            startActivity(i);
-
-        }
         else if (id == R.id.nav_History) {
             Intent i = new Intent(MainActivity.this, recents.class);
             startActivity(i);

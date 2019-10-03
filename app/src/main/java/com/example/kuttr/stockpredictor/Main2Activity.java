@@ -105,11 +105,6 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
         if (id == R.id.nav_home) {
 
         }
-        else if (id == R.id.nav_favourite) {
-            Intent i = new Intent(Main2Activity.this, favourites2.class);
-            startActivity(i);
-
-        }
         else if (id == R.id.nav_History) {
             Intent i = new Intent(Main2Activity.this, recents2.class);
             startActivity(i);

@@ -43,10 +43,6 @@
             android:value="29cbd600bb8183011201895a931db91e93f2d614" />
 
         <activity
-            android:name=".favourites"
-            android:label="Favourites"
-            android:parentActivityName=".MainActivity" />
-        <activity
             android:name=".recents"
             android:label="Recent History"
             android:parentActivityName=".MainActivity" />
@@ -62,10 +58,6 @@
             android:name=".Main2Activity"
             android:fontFamily="sans-serif"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".favourites2"
-            android:label="Favourites"
-            android:parentActivityName=".Main2Activity" />
         <activity
             android:name=".recents2"
             android:label="Recent History"

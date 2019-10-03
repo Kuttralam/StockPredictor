@@ -16,7 +16,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PredictorActivity extends AppCompatActivity implements View.OnClickListener {
+public class PredictorActivity extends AppCompatActivity  {
+
     private TextView StockTView,CompanyTView, predictView;
     final static String fileName = "fav.txt";
     final static String path = "MLMarksman" ;
@@ -45,10 +46,7 @@ public class PredictorActivity extends AppCompatActivity implements View.OnClick
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         fav=findViewById(R.id.fav);
-        addtofav=findViewById(R.id.addtofav);
-        remfromfav=findViewById(R.id.remfromfav);
-        addtofav.setOnClickListener(this);
-        remfromfav.setOnClickListener(this);
+
         spinner = (Spinner) findViewById(R.id.spinner1);
         List<String> spin = new ArrayList<String>();
         for (int i = 0; i < 375; i++) {
@@ -108,17 +106,5 @@ public class PredictorActivity extends AppCompatActivity implements View.OnClick
             }
         });
 
-    }
-
-    @Override
-    public void onClick(View v) {
-        if(v.getId()==addtofav.getId())
-        {
-            Toast.makeText(this,"Added to favourites", Toast.LENGTH_SHORT).show();
-        }
-        if(v.getId()==remfromfav.getId())
-        {
-            Toast.makeText(this,"Removed from favourites", Toast.LENGTH_SHORT).show();
-        }
     }
 }
